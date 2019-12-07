@@ -1,29 +1,19 @@
-import Link from "next/link";
+import styles from "./styles";
 
 const Social = () => (
-  <ul className="hero-social-links">
-    <Link href="https://github.com/oguzsh">
-      <a className="social-link">Github</a>
-    </Link>
-    <Link href="https://www.twitter.com/oguz_sh">
-      <a className="social-link">Twitter</a>
-    </Link>
-    <Link href="https://www.linkedin.com/in/oguzhanince">
-      <a className="social-link">LinkedIn</a>
-    </Link>
-    <Link href="https://www.instagram.com/oguz.sh">
-      <a className="social-link">Instagram</a>
-    </Link>
-    <style jsx>{`
-      .social-link {
-        margin-right: 8px;
-      }
-
-      a {
-        color: #35459e;
-        text-decoration: none;
-      }
-    `}</style>
+  <ul style={styles.socialLinks}>
+    <a href="https://github.com/oguzsh" style={styles.socialItem}>
+      Github
+    </a>
+    <a href="https://www.twitter.com/oguz_sh" style={styles.socialItem}>
+      Twitter
+    </a>
+    <a href="https://www.linkedin.com/in/oguzhanince" style={styles.socialItem}>
+      LinkedIn
+    </a>
+    <a href="https://www.instagram.com/oguz.sh" style={styles.socialItem}>
+      Instagram
+    </a>
   </ul>
 );
 
