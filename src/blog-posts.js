@@ -1,22 +1,27 @@
 export const getPosts = () => {
-  return [
-    {
-      title: "1500TL ödül! Sen de yarışmaya katıl!",
-      slug: "yarisma",
-      details: require("./posts/yarisma.md").default,
-      date: "5 Aralık 2019"
-    },
-    {
-      title: "Örnek yazı",
-      slug: "ornek-yazi",
-      details: require("./posts/ornek-yazi.md").default,
-      date: "3 Aralık 2019"
-    },
-    {
-      title: "Merhaba dünya!",
-      slug: "merhaba",
-      details: require("./posts/merhaba.md").default,
-      date: "1 Aralık 2019"
-    }
-  ];
+    return [{
+            title: "Pika Sendromu",
+            slug: "pika_sendromu",
+            details: require("./posts/pika_sendromu.md").default,
+            date: "8 Aralık 2019"
+        },
+        {
+            title: "Alturizm",
+            slug: "alturizm",
+            details: require("./posts/alturizm.md").default,
+            date: "8 Aralık 2019"
+        },
+        {
+            title: "Kabus Bozukluğu",
+            slug: "kabus_bozuklugu",
+            details: require("./posts/kabus_bozuklugu.md").default,
+            date: "8 Aralık 2019"
+        },
+        {
+            title: "Apotemnofili",
+            slug: "apotemnofili",
+            details: require("./posts/apotemnofili.md").default,
+            date: "8 Aralık 2019"
+        }
+    ];
 };

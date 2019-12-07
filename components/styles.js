@@ -1,5 +1,14 @@
 const styles = {
 
+    // Container 
+    containerStyle: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        margin: "0 auto",
+        fontFamily: "Poppins",
+    },
+
     // Header
     heroStyle: {
         marginTop: "30px",
@@ -19,7 +28,23 @@ const styles = {
     },
 
     //Social
+    socialLinks: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "25px",
+        padding: "0px"
+    },
 
+    socialItem: {
+        color: "white",
+        fontSize: "14px",
+        backgroundColor: "#7c4dff",
+        borderRadius: "5px",
+        marginLeft: "10px",
+        padding: "5px",
+        textDecoration: "none"
+    },
 
     // Posts
     postContainer: {
@@ -36,7 +61,7 @@ const styles = {
         width: "250px",
         height: "300px",
         margin: "10px",
-        padding: "10px",
+        padding: "15px",
         backgroundColor: "#263238",
         borderRadius: 10,
         overflow: "hidden",
@@ -50,7 +75,13 @@ const styles = {
     },
     postText: {
         color: "white",
-        fontSize: "15px"
+        marginTop: "-20px",
+        fontSize: "15px",
+        display: "block",
+        textOverflow: "ellipsis",
+        overflow: "hidden",
+        whiteSpace: "wrap"
+
     },
     postDate: {
         position: "absolute",
