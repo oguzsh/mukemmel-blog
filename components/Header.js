@@ -1,20 +1,13 @@
 import Social from "./Social";
+import styles from "./styles";
 
 const Header = () => (
-  <div className="hero">
-    <h1 className="hero-title"> Selman Kahya </h1> <Social />
-    <style jsx>
-      {`
-        .hero {
-          text-align: center;
-          margin: 96px 0;
-        }
-
-        .hero-title {
-          font-size: 48px;
-        }
-      `}
-    </style>
+  <div style={styles.heroStyle}>
+    <a href="/" style={styles.titleStyle}>
+      OĞUZHAN İNCE
+    </a>
+    <p style={styles.subtitleStyle}>Frontend Developer</p>
+    <Social />
   </div>
 );
 
