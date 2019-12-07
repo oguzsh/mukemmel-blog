@@ -1,35 +1,20 @@
 import React from "react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import styles from "./styles";
 
 const Posts = props => (
-  <>
+  <div style={styles.postContainer}>
     {props.posts.map(post => (
-      <div className="blog">
-        <h2 className="blog-title">
-          <Link href={post.slug}>
-            <a className="blog-title-link">{post.title}</a>
-          </Link>
-        </h2>
-        <div className="blog-text">
+      <a href={post.slug} style={styles.postCard}>
+        <h2 style={styles.postTitle}>{post.title}</h2>
+        <div style={styles.postText}>
           <ReactMarkdown source={post.details} />
         </div>
-        <div className="blog-date">{post.date}</div>
-        <style jsx>{`
-          .blog-date {
-            text-align: right;
-            color: #cccccc;
-            margin: 12px 0 48px 0;
-          }
-
-          a {
-            color: #35459e;
-            text-decoration: none;
-          }
-        `}</style>
-      </div>
+        <div style={styles.postDate}>{post.date}</div>
+      </a>
     ))}
-  </>
+  </div>
 );
 
 export default Posts;
