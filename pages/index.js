@@ -26,7 +26,7 @@ const Home = ({ posts }) => (
 );
 
 Home.getInitialProps = async ({ req }) => {
-  const res = await fetch("http://localhost:3000/api/posts");
+  const res = await fetch("https://oguzshblog.herokuapp.com/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };
